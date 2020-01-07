@@ -5,10 +5,52 @@
     <title>Main Page </title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" link rel="stylesheet" />
     <link rel="stylesheet" href="../styles/styles.css" />
+
+
 </head>
 
 <body>
-    <h1>Welcome</h1>
+    <h1 id="welcome-msg">Welcome</h1>
+    <form class="ui form">
+        <div class="field">
+            <label>First Name:</label>
+            <input type="text" name="first" />
+
+        </div>
+        <div class="field">
+            <label>Last Name:</label>
+            <input type="text" name="last" />
+        </div>
+        <div class="field">
+            <label>Gender:</label>
+            <input type="text" name="gender" />
+        </div>
+        <div class="field">
+            <label>Date of Birth:</label>
+            <input type="text" name="dob" />
+        </div>
+        <div id="accounts" class="field">
+            <label>Accounts:</label>
+        </div>
+        <br />
+        <div class="three fields">
+            <div class="field" id="fromMth">
+                <label>From month</label>
+
+            </div>
+            <div class="field" id="toMth">
+                <label>To Month</label>
+
+            </div>
+            <div class="field" id="year">
+                <label>Year</label>
+
+            </div>
+
+        </div>
+    </form>
+
+    <script src="../js/app.js"></script>
 </body>
 
 </html>

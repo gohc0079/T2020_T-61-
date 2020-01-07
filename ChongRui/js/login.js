@@ -28,6 +28,14 @@ loginForm.addEventListener('submit', (e) => {
         if (response.ok) {
             response.json().then(data => {
                 console.log(data)
+                var user = {
+                    username: data.userName,
+                    customerId: data.customerId
+
+                }
+                sessionStorage.SessionName = JSON.stringify(user);
+                window.location.replace("../view/index.html");
+
             })
         } else {
             var error = new Error(reponse.statusText)
