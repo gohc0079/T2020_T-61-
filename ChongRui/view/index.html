@@ -5,13 +5,14 @@
     <title>Main Page </title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" link rel="stylesheet" />
     <link rel="stylesheet" href="../styles/styles.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
 
 </head>
 
 <body>
     <h1 id="welcome-msg">Welcome</h1>
-    <form class="ui form">
+    <form class="ui form" id="dataForm">
         <div class="field">
             <label>First Name:</label>
             <input type="text" name="first" />
@@ -47,8 +48,14 @@
 
             </div>
 
+
+        </div>
+        <div>
+
+            <button id="submit">Submit</button>
         </div>
     </form>
+    <div id="myDiv"></div>
 
     <script src="../js/app.js"></script>
 </body>
